@@ -1,0 +1,8 @@
+.strikeTHrough{
+    text-decoration: line-through;
+    font-style: italic;
+    color: indigo;
+}
+li{
+    list-style-type:none
+}
