@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <title>TO DO LIST</title>
 </head>
 
@@ -13,43 +14,17 @@
     <br>
     <br>
     <link rel="stylesheet" href="styles.css">
-
-
-    <script>
-        var i = 1;
-        function showTask() {
-            var taskInput  = document.getElementById('tasks').value;
-            var showTask = document.getElementById('showTask');
-            // var li  = document.createElement('li');
-            // var task  = document.createTextNode(taskInput);
-            // li.appendChild(task);
-            // showTask.appendChild(li);
-            showTask.innerHTML += `<li style="list-style-type:none" class="" id="${++i}"><input class="" type="checkbox" onclick="crossTask()" id="${++i}" > ${taskInput} </li>`;  
-
-                // event.classList.toggle('crossOff');
-            document.getElementById('tasks').value='';
-        }
-        var element;
-        function crossTask(){
-            // var completedTasks = document.getElementsByTagName('li');
-            for(var j = 2 ; j<= i; j+=2){
-                 element =document.getElementById(`${j}`);
-                //  console.log(element.checked);
-                 if(element.checked)
-                document.getElementById(`${j}`).classList.toggle('strikeTHrough');
-            }
-        }
-    </script>
+    
     <form action="" name="toDoList" id="toDoList">
-        <label for="task">Enter Task</label>
-        <input type="text" name="tasks" id="tasks" placeholder="get milk..."  >
-        <input type="button" id="addButton" value="+" onclick="showTask()" >
-
+        <!-- <label for="task">Enter Task</label> -->
+        <input type="text" name="tasks" id="tasks" placeholder="Enter Task...">
+        <input type="button" id="addButton" class="button" value="+" onclick="showTask()">
+        
+        
     </form>
     <ul id="showTask" name="showTask">
         
     </ul>
-
+    
 </body>
-
 </html>
