@@ -1,10 +1,58 @@
+
+
+
 .strikeTHrough{
     text-decoration: line-through;
     font-style: initial;
     color: red;
+    opacity: 50%;
 }
 li{
     list-style-type:none
+}
+.Task-collector{
+ 
+
+}
+.input{
+  border-radius: 50px;
+  box-sizing: content-box;
+  text-align: center;
+  font-size: 25px;
+  position: absolute;
+  margin: auto;
+  /* width: 50%; */
+  border: 3px solid magenta;
+  padding: 10px;
+  margin-left: 35%;
+  margin-right:25%;
+  position: relative;
+  top: 80px;
+}
+.button{
+  position: absolute;
+  right: 665px;
+  top: 120px;
+  width: 30px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: yellowgreen;
+  background-image: url ('images/tick-Button.jpeg') no-repeat;
+  cursor: pointer;
+
+}
+.liItems{
+  width: 350px;
+  height: 30px;
+  text-align: center;
+  font-size: 25px;
+  padding: auto;
+
+}
+.toDoItems{
+  position: absolute;
+  top: 170px;
+  right: 600px; 
 }
 /* body{
     background-color: #FFDE00;
@@ -24,6 +72,10 @@ body {
 
   }
   
+  .heading{
+    position: absolute;
+    left:  600px;
+  }
   /* ============================================== */
 .holder {
     width:400px;
@@ -48,3 +100,5 @@ ul {
   ul li:last-child {
     border-bottom: none
   }
+
+  
